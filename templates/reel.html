@@ -1,0 +1,206 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    Reel
+{% endblock title %}
+
+{% block nav_heading %}
+<a class="navbar-brand text-start" href="#">
+<img class="left-arrow" src="{% static 'images\header_footer\left-arrow.png' %}" alt="">
+<b>Myntra Mini</b> </a>
+{% endblock nav_heading %}
+
+{% block content %}
+
+<div class="container">
+    <div class="col-lg-3 col-12 mb-4">
+        <div class="card border border-dark">   
+            <img src="{% static 'images/reels/1.png' %}" class="img-fluid" alt="reel">
+            <div class="row">
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <button class="btn btn-light" onclick="shareContent()"><img src="{% static 'images\icons\send.png' %}" alt=""></button> 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="reel_path" value="images/reels/1.png">
+                            <button class="btn btn-light" type="submit"><img src="{% static 'images\icons\bookmark.png' %}" alt=""></button>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="col-lg-3 col-12 mb-4">
+        <div class="card border border-dark">   
+            <img src="{% static 'images/reels/2.png' %}" <!---> class="img-fluid" alt="reel">
+            <div class="row">
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <button class="btn btn-light" onclick="shareContent()"><img src="{% static 'images\icons\send.png' %}" alt=""></button> 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="reel_path" value="images/reels/2.png">
+                            <button class="btn btn-light" type="submit"><img src="{% static 'images\icons\bookmark.png' %}" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="col-lg-3 col-12 mb-4">
+        <div class="card border border-dark">   
+            <img src="{% static 'images/reels/3.png' %}" class="img-fluid" alt="reel">
+            <div class="row">
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <button class="btn btn-light" onclick="shareContent()"><img src="{% static 'images\icons\send.png' %}" alt=""></button> 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="reel_path" value="images/reels/3.png">
+                            <button class="btn btn-light" type="submit"><img src="{% static 'images\icons\bookmark.png' %}" alt=""></button>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="col-lg-3 col-12 mb-4">
+        <div class="card border border-dark">   
+            <img src="{% static 'images/reels/4.png' %}" class="img-fluid" alt="reel">
+            <div class="row">
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <button class="btn btn-light" onclick="shareContent()"><img src="{% static 'images\icons\send.png' %}" alt=""></button> 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="reel_path" value="images/reels/4.png">
+                            <button class="btn btn-light" type="submit"><img src="{% static 'images\icons\bookmark.png' %}" alt=""></button>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="col-lg-3 col-12 mb-4">
+        <div class="card border border-dark">   
+            <img src="{% static 'images/reels/5.png' %}" class="img-fluid" alt="reel">
+            <div class="row">
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <button class="btn btn-light" onclick="shareContent()"><img src="{% static 'images\icons\send.png' %}" alt=""></button> 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="reel_path" value="images/reels/5.png">
+                            <button class="btn btn-light" type="submit"><img src="{% static 'images\icons\bookmark.png' %}" alt=""></button>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="col-lg-3 col-12 mb-4">
+        <div class="card border border-dark">   
+            <img src="{% static 'images/reels/6.png' %}" class="img-fluid" alt="reel">
+            <div class="row">
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <button class="btn btn-light" onclick="shareContent()"><img src="{% static 'images\icons\send.png' %}" alt=""></button> 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="reel_path" value="images/reels/6.png">
+                            <button class="btn btn-light" type="submit"><img src="{% static 'images\icons\bookmark.png' %}" alt=""></button>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="col-lg-3 col-12 mb-4">
+        <div class="card border border-dark">   
+            <img src="{% static 'images/reels/7.png' %}" class="img-fluid" alt="reel">
+            <div class="row">
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <button class="btn btn-light" onclick="shareContent()"><img src="{% static 'images\icons\send.png' %}" alt=""></button> 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="reel_path" value="images/reels/7.png">
+                            <button class="btn btn-light" type="submit"><img src="{% static 'images\icons\bookmark.png' %}" alt=""></button>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+
+{% endblock content %}

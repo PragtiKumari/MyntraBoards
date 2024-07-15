@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    Chat
+{% endblock title %}
+
+
+{% block nav_heading %}
+<a class="navbar-brand text-start" href="#">
+<img class="left-arrow" src="{% static 'images\header_footer\left-arrow.png' %}" alt="">
+<b>Chat</b> </a>
+{% endblock nav_heading %}
+{% block content %}
+<div class="container-fluid">
+    <div class="col-12">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search for items" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">Search</button>
+            </div>
+          </div>
+    </div>
+</div>
+<div class="container">
+    <div class="col-12">
+        <img src="{% static 'images\reels\AI Assistant[1].png' %}" alt="" class="img-fluid">
+    </div>
+</div>
+{% endblock %}

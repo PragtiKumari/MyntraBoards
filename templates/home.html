@@ -1,0 +1,338 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    Home
+{% endblock title %}
+{% block nav_heading %}
+<a class="navbar-brand text-start" href="#">
+<img class="left-arrow" src="{% static 'images\header_footer\left-arrow.png' %}" alt="">
+<b>Home</b> </a>
+{% endblock nav_heading %}
+{% block content %}
+<div class="container-fluid">
+
+    <table class="table table-sm table-dark text-center">
+        <tr>
+            <th>Casual</th>
+            <th>Ethnic</th>
+            <th>Party</th>
+            <th>Beauty</th>
+            <th>Athleisure</th>
+        </tr>
+    </table>
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h5>Myntra Mini</h5>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <a href="{% url 'reel' %}">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-lg-2 col-4 reel">
+                <div class="card heit border border-dark">   
+                        <img src="{% static 'images\home_image\3.png' %}" alt="reel">
+                        <p class=" p-2 fw-bold user">
+                             <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User</p>
+                </div>  
+            </div>  
+            <div class="col-lg-2 col-4 reel">
+                <div class="card border border-dark">   
+                        <img src="{% static 'images\home_image\2.png' %}" alt="reel">
+                        <p class=" p-2 fw-bold user"> <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User </p>
+
+                </div>  
+            </div>  
+            <div class="col-lg-2 col-4 reel">
+                <div class="card border border-dark">   
+                        <img src="{% static 'images\home_image\1.png' %}" alt="reel">
+                        <p class=" p-2 fw-bold user"> <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User </p>
+                </div>  
+            </div>           
+                      
+        </div>
+    </div>
+</a>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="mt-4 text-center">
+                <button type="button" class="btn btn-light border border-dark new_button"><b>New Posts</b></button>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+<div class="col-12">
+    <div class="row">
+        <div class="col-lg-2 col-6 mb-4">
+            <div class="card heit border border-dark reel">   
+                    <img src="{% static 'images/home_image/beauty-accessories-set_23-2147811431.jpg' %}" alt="reel">
+                
+                <p class=" p-2 fw-bold user"> <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User </p>
+                
+                <!-- new added -->
+                <div class="row">
+                    <div class="col-6 text-center">
+                        <p class="text-center"><button type="button" class="btn btn-sm btn-outline-danger">Add Cart</button>
+
+                    </div>
+                    <div class="col-6">
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="img_path" value="images/home_image/beauty-accessories-set_23-2147811431.jpg">
+                            <button type="submit" class="btn btn-sm btn-outline-danger">Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- new added end -->
+                    
+            </div>  
+        </div>  
+        <div class="col-lg-2 col-6 mb-4">
+            <div class="card heit border border-dark reel">   
+                    <img src="{% static 'images/home_image/DIY+face+plant+pot+5.jpg' %}" alt="reel">
+                <p class=" p-2 fw-bold user"> <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User </p>
+                <!-- new added -->
+                <div class="row">
+                    <div class="col-6">
+                        <p class="text-center"><button type="button" class="btn btn-sm btn-outline-danger">Add Cart</button>
+
+                    </div>
+                    <div class="col-6">
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="img_path" value="images/home_image/DIY+face+plant+pot+5.jpg">
+                            <button type="submit" class="btn btn-sm btn-outline-danger">Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- new added end -->
+            </div>  
+        </div> 
+        <div class="col-lg-2 col-6 mb-4">
+            <div class="card heit border border-dark reel">   
+                    <img src="{% static 'images/home_image/download (2).png' %}" alt="reel">
+                <p class=" p-2 fw-bold user"> <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User </p>
+                    <!--new added-->
+                    <div class="row">
+                    <div class="col-6">
+                        <p class="text-center"><button type="button" class="btn btn-sm btn-outline-danger">Add Cart</button>
+
+                    </div>
+                    <div class="col-6">
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="img_path" value="images/home_image/download (2).png">
+                            <button type="submit" class="btn btn-sm btn-outline-danger">Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            <!--new added end-->
+            </div>  
+        </div> 
+        <div class="col-lg-2 col-6 mb-4">
+            <div class="card heit border border-dark reel">   
+                    <img src="{% static 'images/home_image/fashion-3555650_1280.jpg' %}" alt="reel">
+                <p class=" p-2 fw-bold user"> <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User </p>
+                    <!--new added-->
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-center"><button type="button" class="btn btn-sm btn-outline-danger">Add Cart</button>
+                        </div>
+                         <div class="col-6">
+                             <form action="" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="img_path" value="images/home_image/fashion-3555650_1280.jpg">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Wishlist</button>
+                            </form>
+                        </div>
+                    </div> 
+                    <!--new added end-->
+            </div>  
+        </div> 
+        <div class="col-lg-2 col-6 mb-4">
+            <div class="card heit border border-dark reel">   
+                    <img src="{% static 'images/home_image/fashionable-young-caucasian-brunette-hoodie-jeans-likes-listen-music-with-headphones-purple-background-technological-device-concept_197531-31649.jpg' %}" alt="reel">
+                <p class=" p-2 fw-bold user"> <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User </p>
+                    <!-- new added -->
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-center"><button type="button" class="btn btn-sm btn-outline-danger">Add Cart</button>
+    
+                        </div>
+                        <div class="col-6">
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="img_path" value="images/home_image/fashionable-young-caucasian-brunette-hoodie-jeans-likes-listen-music-with-headphones-purple-background-technological-device-concept_197531-31649.jpg">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Wishlist</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- new added end -->                      
+            </div>  
+        </div> 
+        <div class="col-lg-2 col-6 mb-4">
+            <div class="card heit border border-dark reel">   
+                    <img src="{% static 'images/home_image/still-life-cosmetic-products_23-2149163116.jpg' %}" alt="reel">
+                <p class=" p-2 fw-bold user"> <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User </p>
+                    <!-- new added -->
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-center"><button type="button" class="btn btn-sm btn-outline-danger">Add Cart</button>
+    
+                        </div>
+                        <div class="col-6">
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="img_path" value="images/home_image/still-life-cosmetic-products_23-2149163116.jpg">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Wishlist</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- new added end -->
+            </div>  
+        </div> 
+        <div class="col-lg-2 col-6 mb-4">
+            <div class="card heit border border-dark reel">   
+                    <img src="{% static 'images/home_image/stylish-kitchen-implements-set-perfect-convergence-functionality-fashion-catering-your_639785-12667.jpg' %}" alt="reel">
+                <p class=" p-2 fw-bold user"> <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User </p>
+                    <!-- new added -->
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-center"><button type="button" class="btn btn-sm btn-outline-danger">Add Cart</button>
+    
+                        </div>
+                        <div class="col-6">
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="img_path" value="images/home_image/stylish-kitchen-implements-set-perfect-convergence-functionality-fashion-catering-your_639785-12667.jpg">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Wishlist</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- new added end -->                    
+            </div>  
+        </div> 
+        <div class="col-lg-2 col-6 mb-4">
+            <div class="card heit border border-dark reel">   
+                    <img src="{% static 'images/home_image/woman-8257060_1280.jpg' %}" alt="reel">
+                <p class=" p-2 fw-bold user"> <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User </p>
+                    <!-- new added -->
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-center"><button type="button" class="btn btn-sm btn-outline-danger">Add Cart</button>
+    
+                        </div>
+                        <div class="col-6">
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="img_path" value="images/home_image/woman-8257060_1280.jpg">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Wishlist</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- new added end -->                    
+            </div>  
+        </div> 
+        <div class="col-lg-2 col-6 mb-4">
+            <div class="card heit border border-dark reel">   
+                    <img src="{% static 'images/home_image/woman-with-black-blazer_144627-42056.jpg' %}" alt="reel">
+                <p class=" p-2 fw-bold user"> <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User </p>
+                    <!-- new added -->
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-center"><button type="button" class="btn btn-sm btn-outline-danger">Add Cart</button>
+    
+                        </div>
+                        <div class="col-6">
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="img_path" value="images/home_image/woman-with-black-blazer_144627-42056.jpg">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Wishlist</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- new added end -->
+                    
+            </div>  
+        </div> 
+        <div class="col-lg-2 col-6 mb-4">
+            <div class="card heit border border-dark reel">   
+                    <img src="{% static 'images/home_image/wooden-cutlery-parsley_23-2148678005.jpg' %}" alt="reel">
+                <p class=" p-2 fw-bold user"> <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User </p>
+                    <!-- new added -->
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-center"><button type="button" class="btn btn-sm btn-outline-danger">Add Cart</button>
+    
+                        </div>
+                        <div class="col-6">
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="img_path" value="images/home_image/wooden-cutlery-parsley_23-2148678005.jpg">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Wishlist</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- new added end -->
+                    
+            </div>  
+        </div> 
+        <div class="col-lg-2 col-6 mb-4">
+            <div class="card heit border border-dark reel">   
+                    <img src="{% static 'images/home_image/traveler-2203666_1280.jpg' %}" alt="reel">
+                <p class=" p-2 fw-bold user"> <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User </p>
+                    <!-- new added -->
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-center"><button type="button" class="btn btn-sm btn-outline-danger">Add Cart</button>
+    
+                        </div>
+                        <div class="col-6">
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="img_path" value="images/home_image/traveler-2203666_1280.jpg">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Wishlist</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- new added end -->
+                    
+            </div>  
+        </div> 
+        <div class="col-lg-2 col-6 mb-4">
+            <div class="card heit border border-dark reel">   
+                    <img src="{% static 'images/home_image/pastry-preparation-ingredients_23-2147984163.jpg' %}" alt="reel">
+                <p class=" p-2 fw-bold user">  <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User </p>
+                    <!-- new added -->
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-center"><button type="button" class="btn btn-sm btn-outline-danger">Add Cart</button>
+    
+                        </div>
+                        <div class="col-6">
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="img_path" value="images/home_image/pastry-preparation-ingredients_23-2147984163.jpg">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Wishlist</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- new added end -->
+                   
+            </div>  
+        </div> 
+    </div>
+</div>
+</div>
+
+{% endblock content %}

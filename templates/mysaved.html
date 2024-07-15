@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    Profile
+{% endblock title %}
+
+{% block nav_heading %}
+<a class="navbar-brand text-start" href="#">
+<img class="left-arrow" src="{% static 'images\header_footer\left-arrow.png' %}" alt="">
+<b>My Boards</b> </a>
+{% endblock nav_heading %}
+
+{% block content %}
+<div class="container">
+    <div class="col-12">
+    <div class="row">
+        <div class="col-12 text-center">
+            <img src="{% static 'images\home_image\fashionable-young-caucasian-brunette-hoodie-jeans-likes-listen-music-with-headphones-purple-background-technological-device-concept_197531-31649.jpg' %}" class="img-profile" alt="img-fluid">  
+            <div><b>Your Name</b></div>
+            <div>@ userName</div>
+            <div>0. followers 0. following </div>
+            <div><button type="button" class="btn  btn-danger border border-dark new_button"><b>Edit Profile</b></button></div>
+        </div>
+        <div class="col-12 mt-4 mb-4">
+            <div class="row">
+            <div class="col-6 text-center">
+                <a href="{% url 'profile' %}">
+                <img src="{% static 'images\icons\e-commerce.png' %}" class="logo-p" alt="w"> <b>My Wishlist</b> 
+                </a>
+            </div>
+            <div class="col-6 text-center">
+                <a href="{% url 'mysaved' %}">
+                <img src="{% static 'images\icons\bookmark.png' %}" alt="w" class="logo-p"> <b>My save</b></a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <div class="col-12 text-center">
+        <button  type="button" class="btn btn-danger px-5">Create New Board</button>
+    </div>
+    <div class="col-12 text-center mt-4 mb-4">
+        <h4>My Save Myntra Mini </h4>
+    </div>
+</div>
+
+<div class="container">
+    {% for reel in reels %}
+      
+   
+    <div class="col-12 mb-4">
+        <div class="card border border-dark">   
+            <img src="{% static '' %}{{reel.path}}" class="img-fluid" alt="reel">
+            <div class="row">
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <img src="{% static 'images\header_footer\user (1).png' %}" alt="">User 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <button class="btn btn-light" onclick="shareContent()"><img src="{% static 'images\icons\send.png' %}" alt=""></button> 
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class=" p-2 fw-bold user"> 
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="id" value="{{ reel.id }}">
+                            <button class="btn btn-light" type="submit"><img src="{% static 'images\icons\trash.png' %}" alt=""></button>
+                        </form> 
+                    </div>
+                </div>
+            </div> 
+        </div>  
+    </div>
+    {% endfor %}
+
+    
+</div>
+
+{% endblock content %}

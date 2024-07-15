@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    Explore
+{% endblock title %}
+
+{% block nav_heading %}
+<a class="navbar-brand text-start" href="#">
+<img class="left-arrow" src="{% static 'images\header_footer\left-arrow.png' %}" alt="">
+<b>Explore</b> </a>
+{% endblock nav_heading %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="col-12">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search for items" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">Search</button>
+            </div>
+          </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="col-12">
+        <!-- Slides with indicators -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{%static 'images\home_image\Shop_the_celeb.jpg' %}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{%static 'images\explore_image\Kiara-Advani.jpg' %}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{%static 'images\explore_image\shanayakapoor.jpg' %}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div><!-- End Slides with indicators -->
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="col-12">
+        <h5 class="text-center">People you might want to follow</h5>
+    </div>
+    <div class="col-12">
+        <div class="row">
+            <div class="col-3 ">
+                <img src="{% static 'images\explore_image\Alia.jpeg' %}" class="img-fluid rounded-circle border border-4 border-danger" alt="img-fluid">
+            </div>
+            <div class="col-3 ">
+                <img src="{% static 'images\explore_image\Shreya.jpeg' %}" class="img-fluid rounded-circle border border-4 border-danger" alt="img-fluid">
+            </div>
+            <div class="col-3 ">
+                <img src="{% static 'images\explore_image\Temple_girl.jpeg' %}" class="img-fluid rounded-circle border border-4 border-danger" alt="img-fluid">
+            </div>
+            <div class="col-3 ">
+                <img src="{% static 'images\explore_image\Deepika.jpeg' %}" class="img-fluid rounded-circle border border-4 border-danger" alt="img-fluid">
+            </div>
+            
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="col-12">
+        <h5 class="text-center">Explore new ideas</h5>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-4 mb-4">
+                <img src="{% static 'images/explore_image/IMG-20240713-WA0030.jpg' %}" class="img-fluid" alt="img-fluid">
+            </div>
+            <div class="col-4 mb-4">
+                <img src="{% static 'images/explore_image/IMG-20240713-WA0031.jpg' %}" class="img-fluid" alt="img-fluid">
+            </div>
+            <div class="col-4 mb-4">
+                <img src="{% static 'images/explore_image/IMG-20240713-WA0034.jpg' %}" class="img-fluid" alt="img-fluid">
+            </div>
+            <div class="col-12 mb-4">
+                <img src="{% static 'images/explore_image/IMG-20240713-WA0035.jpg' %}" class="img-fluid" alt="img-fluid">
+            </div>
+            <div class="col-3 mb-4">
+                <img src="{% static 'images/explore_image/IMG-20240713-WA0036.jpg' %}" class="img-fluid" alt="img-fluid">
+            </div>
+            <div class="col-3 mb-4">
+                <img src="{% static 'images/explore_image/IMG-20240713-WA0037.jpg' %}" class="img-fluid" alt="img-fluid">
+            </div>
+            <div class="col-3 mb-4">
+                <img src="{% static 'images/explore_image/IMG-20240713-WA0042.jpg' %}" class="img-fluid" alt="img-fluid">
+            </div>
+            <div class="col-3 mb-4">
+                <img src="{% static 'images/explore_image/IMG-20240713-WA0032.jpg' %}" class="img-fluid" alt="img-fluid">
+            </div>
+            <div class="col-6 mb-4">
+                <img src="{% static 'images/explore_image/IMG-20240713-WA0038.jpg' %}" class="img-fluid" alt="img-fluid">
+            </div>
+            <div class="col-6 mb-4">
+                <img src="{% static 'images/explore_image/IMG-20240713-WA0041.jpg' %}" class="img-fluid" alt="img-fluid">
+            </div>
+
+
+        </div>
+    </div>
+</div>
+{% endblock content %}
