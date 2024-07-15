@@ -1,6 +1,4 @@
-Sure! Here's a sample README file for your MyntraBoards prototype:
 
----
 
 # MyntraBoards Prototype
 
