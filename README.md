@@ -21,7 +21,7 @@ Welcome to the MyntraBoards Prototype! This project demonstrates a new app-in-ap
 
 ## Prototype Link
 
-You can view the interactive prototype [here](#https://techtitansteam.pythonanywhere.com/).
+You can view the interactive Figma UI prototype [https://www.figma.com/proto/vqFKqclkOMCa8yeg0TGb6B/Myntra?node-id=41-2&p=f&t=Wsx1ijxKR5W9kbY6-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=61%3A1001&show-proto-sidebar=1].
 
 ## Technologies Used
 
@@ -35,6 +35,7 @@ You can view the interactive prototype [here](#https://techtitansteam.pythonanyw
 ## Contact
 
 For any questions or feedback, feel free to reach out:
+nehabharti611@gmail.com
 
 - **Email**: nehabharti611@gmail.com
 - **GitHub**: [Neha-611](https://github.com/Neha-611)
