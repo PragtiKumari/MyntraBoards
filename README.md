@@ -1,8 +1,7 @@
 
 
 # MyntraBoards Prototype
-
-Welcome to the MyntraBoards Prototype! This project demonstrates a new app-in-app feature for the Myntra app which is designed to enhance user engagement by transforming the conventional wishlist into a more fun and community-driven feature integrated with MStudio.
+Welcome to the MyntraBoards Prototype! This project was built as part of the **Myntra Hackeramp: WeForShe 2024** by our team **Synergy Sharks**. This team project demonstrates a new app-in-app feature for the Myntra app which is designed to enhance user engagement by transforming the conventional wishlist into a more fun and community-driven feature integrated with MStudio.
 
 ## Table of Contents
 
@@ -32,11 +31,19 @@ You can view the interactive Figma UI prototype [https://www.figma.com/proto/vqF
 - **Database**: SQLite.
 
 
+## Team:
+- [**Pragati Kumari**](https://github.com/PragtiKumari)
+- [**Neha Bharti**](https://github.com/Neha-611)
+- 
+### 💼 My Contributions:
+- Designed the **Explore & Feed UI** and prototyped it in Figma  
+- Implemented **frontend interactions** using HTML, CSS, and Bootstrap  
+- Integrated **messaging UI and logic**  
+
+---
 ## Contact
 
 For any questions or feedback, feel free to reach out:
-nehabharti611@gmail.com
-
 - **Email**: btech15110.22@bitmesra.ac.in
 - **GitHub**: https://github.com/PragtiKumari
 
