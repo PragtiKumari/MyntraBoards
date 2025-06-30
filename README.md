@@ -34,7 +34,7 @@ You can view the interactive Figma UI prototype [https://www.figma.com/proto/vqF
 ## Team:
 - [**Pragati Kumari**](https://github.com/PragtiKumari)
 - [**Neha Bharti**](https://github.com/Neha-611)
-- 
+  
 ### 💼 My Contributions:
 - Designed the **Explore & Feed UI** and prototyped it in Figma  
 - Implemented **frontend interactions** using HTML, CSS, and Bootstrap  
