@@ -37,8 +37,8 @@ You can view the interactive Figma UI prototype [https://www.figma.com/proto/vqF
 For any questions or feedback, feel free to reach out:
 nehabharti611@gmail.com
 
-- **Email**: nehabharti611@gmail.com
-- **GitHub**: [Neha-611](https://github.com/Neha-611)
+- **Email**: btech15110.22@bitmesra.ac.in
+- **GitHub**: https://github.com/PragtiKumari
 
 ---
 
